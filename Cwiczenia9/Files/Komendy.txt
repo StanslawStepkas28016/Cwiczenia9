@@ -1,0 +1,6 @@
+dotnet new tool-manifest 
+dotnet tool install dotnet-ef
+dotnet ef dbcontext scaffold "Server=localhost,1433;Database=master;User Id=sa;Password=bazaTestowa1234;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models -v
+
+.Include // do join
+.Select // do nowego obiektu
